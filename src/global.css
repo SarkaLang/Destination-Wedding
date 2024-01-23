@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500&display=swap');
+
+/*
+font-family: 'Lora', serif; NADPISY semibold
+font-family: 'Nunito Sans', sans-serif; TEXT extra light, light, regular, medium
+*/
+
+:root {
+  --background-primary: #F5EDDA;
+  --background-secundary: #F5F5F5;
+  --button: #DDCC9F;
+  --text: #3D3B3A;
+  --font-title: 'Lora';
+  --font-global: 'Nunito Sans'
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-global);
+}
+
+body {
+  line-height: 1.5;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+@media (min-width: 1100px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+
+/*---- šířka hlavního obsahu na stránce -----*/
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*-----Sekce----*/
+section {
+  margin: 4rem 0;
+}
+
+.section--margin-top {
+  margin-top: 0;
+}
+
+/*----úvodní text pod titlem---*/
+.text--mobile {
+  max-width: 325px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text--center {
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .text--mobile {
+    max-width: 100%;
+  }
+}
+
+/*----- Fotka a text-----*/
+.container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width:768px) {
+  .container-flex {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .container-flex__item {
+    flex-basis: 47%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container-flex {
+    gap: 3rem;
+  }
+
+}
+
+/*-----Obecné styly pro form----*/
+label,
+input,
+select,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5rem;
+}
+
+label {
+  display: inline-block;
+}
+
+input,
+select,
+textarea {
+  display: block;
+}
+
+label {
+  cursor: pointer;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+  width: 300px;
+}
+
+/*-----popisky fotky -----*/
+.photo__rights {
+  font-size: 0.5rem;
+  color: #ffffff;
+  font-style: italic;
+
+  position: absolute;
+}
+
+.photo__rights--right {
+  right: 2%;
+  bottom: 0;
+}
+
+.photo__rights--left {
+  left: 2%;
+  bottom: 0;
+}

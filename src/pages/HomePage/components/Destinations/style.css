@@ -1,0 +1,27 @@
+/* Nastavení hlavního kontejneru*/
+
+.destination__hp {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 3%;
+  height: auto;
+}
+
+@media (min-width: 850px) {
+  .destination__hp {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 1%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .destination__hp {
+    width: 1100px;
+    margin: 0 auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,15 @@
+/*----Povinná pole----*/
+.required--input {
+  color: red;
+}
+
+.required--center {
+  text-align: center;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .required--center {
+    text-align: left;
+  }
+}

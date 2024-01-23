@@ -1,0 +1,59 @@
+.about-us {
+  position: relative;
+}
+
+.about-us__text {
+  margin: 0 2rem;
+}
+
+.about-us__label {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hidden {
+    display: block;
+  }
+
+  .about-us__img {
+    background-image: url(./img/about-us.JPG);
+    background-position: center;
+    background-size: cover;
+
+    height: 70vh;
+  }
+
+  .about-us__text {
+    margin: 0 1rem 0 0;
+  }
+
+  .about-us__text p {
+    margin: 3rem 0;
+  }
+
+  .about-us__label {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    width: 200px;
+    background-color: var(--background-primary);
+    text-align: center;
+
+    padding: 0.5rem;
+
+    position: absolute;
+    right: -5%;
+    bottom: -6%;
+    left: calc(100% / 3);
+  }
+
+  .about-us__label p {
+    flex-basis: 50%;
+    font-family: 'Lora';
+  }
+
+  .about-us__large {
+    font-size: 1.25rem;
+  }
+}

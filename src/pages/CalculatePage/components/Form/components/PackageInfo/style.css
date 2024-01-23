@@ -1,0 +1,34 @@
+.wedding-calculate__package-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  background-color: var(--background-primary);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 1rem;
+}
+
+.package__title {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.package__title h5 {
+  margin: 0;
+}
+
+.package__title img {
+  cursor: pointer;
+}
+
+.package__content--hidden {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .wedding-calculate__package-info {
+    margin-left: 0;
+  }
+}

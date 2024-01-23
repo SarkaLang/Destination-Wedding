@@ -1,0 +1,34 @@
+/*----Button---*/
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-size: 16px;
+  font-family: var(--font-global);
+  background-color: var(--button);
+  border-radius: 10px;
+  padding: 0.7rem;
+  box-shadow: 0px 4px 6px 0px var(--text);
+  cursor: pointer;
+}
+
+.button:active {
+  scale: 0.9;
+}
+
+.button--no-border {
+  border: none;
+}
+
+@media (min-width: 1024px) {
+  .button:hover {
+    /* background-color: var(--background-primary); */
+    color: #ffffff;
+    scale: 1.1;
+    box-shadow: 0px 2px 4px 0px var(--text);
+  }
+
+}

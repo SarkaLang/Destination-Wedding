@@ -1,0 +1,13 @@
+.reference-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  .reference-container {
+    gap: 5rem;
+  }
+
+}

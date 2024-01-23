@@ -1,0 +1,16 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contact-form__fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+    gap: 1rem;
+  }
+}

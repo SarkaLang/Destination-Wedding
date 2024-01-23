@@ -1,0 +1,82 @@
+/*Svatební kalkulačka*/
+.wedding-calculate {
+  padding: 1rem;
+}
+
+.wedding-calculate__inputs,
+.wedding-calculate__ceremony,
+.wedding-calculate__package-info,
+.wedding-calculate__services,
+.wedding-calculate__place,
+.wedding-calculate__question {
+  margin-bottom: 4rem;
+}
+
+.wedding-calculate__field {
+  display: flex;
+}
+
+.wedding-calculate__inputs,
+.wedding-calculate__place,
+.wedding-calculate__question {
+  flex-direction: column;
+
+}
+
+.wedding-calculate__inputs {
+  align-items: center;
+}
+
+.wedding-calculate__ceremony,
+.wedding-calculate__packages,
+.wedding-calculate__services {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.wedding-calculate__info {
+  font-size: 1rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width:768px) {
+  .wedding-calculate__info {
+    width: 40rem;
+  }
+}
+
+@media (min-width: 450px) {
+
+  .wedding-calculate__place,
+  .wedding-calculate__question {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .wedding-calculate__title {
+    text-align: left;
+  }
+
+  .wedding-calculate__inputs {
+    align-items: baseline;
+  }
+
+  .wedding-calculate__ceremony,
+  .wedding-calculate__packages,
+  .wedding-calculate__services {
+    justify-content: flex-start;
+  }
+
+  .wedding-calculate__place,
+  .wedding-calculate__question {
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+}
