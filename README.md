@@ -1,1 +1,1 @@
-Závěrečný projekt DA Web
+Course Web Development Project
